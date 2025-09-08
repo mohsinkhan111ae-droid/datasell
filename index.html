@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Datasell</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(to right, #6dd5ed, #2193b0);
-      color: white;
-      margin: 0;
-      padding: 50px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      opacity: 0.8;
-    }
-  </style>
+  <title>Data Selling Hub - Payment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🚀 Hello, Welcome to Datasell Website!</h1>
-  <p>🎉 Yeh aapki pehli GitHub Pages website hai 🎉</p>
-  <footer>© 2025 Datasell | Made with ❤️ on GitHub Pages</footer>
+  <div class="container">
+    <h1>Data Selling Hub</h1>
+    <div class="payment-box">
+      <p class="amount">Amount: ₹59</p>
+      <img src="qr-code.jpeg" alt="Scan to Pay" class="qr">
+      <button onclick="payUPI()">💳 Pay via UPI</button>
+      <p class="upi">UPI ID: <b>6005099281@mbk</b></p>
+      <button onclick="submitUTR()">📩 Submit UTR</button>
+      <button onclick="refundRequest()">↩ Request Refund</button>
+      <button onclick="getApp()">📲 Get App</button>
+      <button onclick="location.reload()">🔄 Refresh</button>
+    </div>
+
+    <div class="withdrawals">
+      <h2>Live Withdrawals</h2>
+      <ul>
+        <li>₹240</li><li>₹340</li><li>₹350</li>
+        <li>₹380</li><li>₹480</li><li>₹476</li>
+        <li>₹1000</li><li>₹3000</li><li>₹3200</li><li>₹3600</li>
+      </ul>
+    </div>
+
+    <div class="support">
+      <p>📞 Customer Care (WhatsApp): <a href="https://wa.me/916005099281">6005099281</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
